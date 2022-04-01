@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunriseBlog</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Menu 1</a>
+                <ul>
+                    <li><a href="#">sumMenu1</a></li>
+                    <li><a href="#">sumMenu2</a></li>
+                    <li><a href="#">sumMenu3</a>
+                        <ul>
+                            <li><a href="#">smallsumMenu3</a></li>
+                            <li><a href="#">smallsumMenu3</a></li>
+                            <li><a href="#">smallsumMenu3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 2</a>
+                <ul>
+                    <li><a href="#">sumMenu2</a></li>
+                    <li><a href="#">sumMenu2</a></li>
+                    <li><a href="#">sumMenu2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 3</a>
+                <ul>
+                    <li><a href="#">sumMenu3</a></li>
+                    <li><a href="#">sumMenu3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Menu 4</a>
+                <ul>
+                    <li><a href="#">sumMenu4</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="searchBar">
+            <label for="">Search:</label>
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="login">
+            <h1>SIGN UP</h1>
+        </div>
+    </nav>
+    <div class="form">
+        <h3>Login</h3>
+        <form action="#">
+            <label for="">E-mail</label>
+            <input type="email" placeholder="Enter email" required>
+            <label for="">Password</label>
+            <input type="password" placeholder="Enter password" required>
+            <input type="button" class="sbt" value="submit">
+        </form>
+    </div>
+    <section>
+        <div class="outerimg">
+            <div class="img"></div>
+            <div class="content">
+                <h1>Sunrise</h1>
+                <p>But yonder comes the powerful king of day,
+                    Rejoicing in the east. The lessening cloud,
+                    The kindling azure, and the mountain's brow
+                    Illumed with liquid gold, his near approach
+                    Betoken glad. Lo! now apparent all,
+                    Aslant the dew-bright earth and colored air
+                    He looks in boundless majesty abroad,
+                    And sheds the shining day that, burnished, plays
+                    On rocks, and hills, and towers, and wandering streams,
+                    High gleaming from afar.
+                </p>
+                <div class="author">
+                    - by James Thomson
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        let loginbtn = document.querySelector(".login");
+        let form = document.querySelector(".form");
+        let submitbtn = document.querySelector(".form form .sbt");
+        let input = document.querySelector(".form form input");
+
+        loginbtn.onclick = () => {
+            form.style.display = "block";
+            form.style.position = "relative";
+            form.style.left = "50%";
+            form.style.transform = "translate(-50%)";
+        }
+        submitbtn.onclick = () => {
+            form.style.transform = "scale(0)";
+        }
+
+    </script>
+</body>
+
+</html>
